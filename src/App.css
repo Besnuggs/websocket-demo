@@ -1,32 +1,55 @@
-.App {
-  text-align: center;
+BODY {
+  --white: #f0f7ee;
+  --light1: #c4d7f2;
+  --light2: #afdedc;
+  --dark1: #91a8a4;
+  --dark2: #776871;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.app--component{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--white);
+  font-family: Helvetica, sans-serif;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat-container {
+  height: calc(100% - 40px);
+  padding: 0 1rem;
   display: flex;
-  flex-direction: column;
+}
+.chat {
+  height: 100%;
+  width: 50%;
+}
+NAV {
+  height: 40px;
+  background: var(--dark2);
+  color: var(--white);
+  padding: 10px 1rem;
+}
+.user-input-container{
+  height: 60px;
+}
+.messages-container{
+  height: calc(100% - 60px);
+  color: var(--dark2);
+  overflow-y: auto;
+}
+INPUT {
+  width: 100%;
+}
+.general {
+  border-right: 1px solid var(--dark1);
+  padding-right: 1rem;
+}
+.admin {
+  padding-left: 1rem;
+}
+.notAdmin {
+  height: 100%;
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -2,10 +2,15 @@
   "name": "socket-io-demo",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4000",
+  "main": "server/index.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.0"
+    "react-scripts": "2.1.0",
+    "socket.io": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
